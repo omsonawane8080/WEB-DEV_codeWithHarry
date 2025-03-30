@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dynamic Multicolor Website</h1>
+        <div class="theme-selector">
+            <label for="colorPicker">Choose Theme:</label>
+            <select id="colorPicker" onchange="changeTheme(this.value)">
+                <option value="default">Default</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="ocean">Ocean</option>
+                <option value="sunset">Sunset</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to My Colorful Site</h2>
+            <p>Enjoy seamless theme switching with CSS variables!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MyWebsite</p>
+    </footer>
+
+    <script>
+        function changeTheme(theme) {
+            document.documentElement.className = theme;
+        }
+    </script>
+</body>
+</html>
